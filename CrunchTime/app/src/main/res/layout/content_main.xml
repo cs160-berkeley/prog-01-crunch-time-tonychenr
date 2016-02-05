@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    tools:context="com.example.tc.crunchtime.MainActivity">
+
+    <TextView
+        android:text="Convert!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="3"
+        android:id="@+id/Calories"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/PushUps"
+        android:layout_toStartOf="@+id/SitUpsButton" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="3"
+        android:id="@+id/PushUps"
+        android:layout_below="@+id/Calories"
+        android:layout_alignStart="@+id/SitUps"
+        android:layout_toStartOf="@+id/JoggingButton" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="3"
+        android:id="@+id/SitUps"
+        android:layout_below="@+id/PushUps"
+        android:layout_alignStart="@+id/Jogging" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="3"
+        android:id="@+id/Jogging"
+        android:layout_below="@+id/SitUps"
+        android:layout_toStartOf="@+id/JoggingButton" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="3"
+        android:id="@+id/JumpingJacks"
+        android:layout_below="@+id/Jogging"
+        android:layout_alignEnd="@+id/PushUps"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Calories"
+        android:id="@+id/textView2"
+        android:layout_alignTop="@+id/Calories"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Push Ups (Reps)"
+        android:id="@+id/textView3"
+        android:layout_alignTop="@+id/PushUps"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sit Ups (Reps)"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/PushUps"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Jogging (Mins)"
+        android:id="@+id/textView5"
+        android:layout_alignTop="@+id/Jogging"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Jumping Jacks (Mins)"
+        android:id="@+id/textView6"
+        android:layout_alignTop="@+id/JumpingJacks"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CaloriesButton"
+        android:src="@android:drawable/ic_menu_send"
+        android:layout_above="@+id/PushUps"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PushUpsButton"
+        android:src="@android:drawable/ic_menu_send"
+        android:layout_above="@+id/SitUps"
+        android:layout_toEndOf="@+id/PushUps" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SitUpsButton"
+        android:src="@android:drawable/ic_menu_send"
+        android:layout_alignBottom="@+id/SitUps"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/JoggingButton"
+        android:src="@android:drawable/ic_menu_send"
+        android:layout_alignBottom="@+id/Jogging"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/JumpingJacksButton"
+        android:src="@android:drawable/ic_menu_send"
+        android:layout_alignBottom="@+id/JumpingJacks"
+        android:layout_toEndOf="@+id/Jogging"
+        android:layout_alignStart="@+id/JoggingButton" />
+
+</RelativeLayout>

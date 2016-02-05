@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CrunchTime</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="exercises_array">
+        <item>Pushup</item>
+        <item>Jogging</item>
+        <item>Situp</item>
+        <item>Jumping Jack</item>
+    </string-array>
+</resources>

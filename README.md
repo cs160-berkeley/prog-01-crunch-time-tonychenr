@@ -4,11 +4,11 @@ Briefly describe your app here.
 
 ## Authors
 
-FirstName LastName ([your_email@berkeley.edu](mailto:your_email@berkeley.edu))
+Tony Chen ([sirtony@berkeley.edu](mailto:sirtony@berkeley.edu))
 
 ## Demo Video
 
-See [your demo video title here] (https://link_to_your_video)
+See [CrunchTime] (https://youtu.be/aR_y3qFPeP8)
 
 ## Screenshots
 
