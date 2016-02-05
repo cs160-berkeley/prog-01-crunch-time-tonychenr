@@ -1,6 +1,6 @@
 # PROG 01: Crunch Time
 
-Briefly describe your app here.
+This app converts values from Calories to the number of reps of an exercise that the user must perform to burn that amount of Calories. The user can also convert from the amount of reps of an exercise to the number of Calories burned, as well as the equivalent number of reps of another exercise.
 
 ## Authors
 
